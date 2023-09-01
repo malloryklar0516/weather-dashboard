@@ -28,7 +28,10 @@ THEN the saved events persist
 ```
 ## Deployment
 ### Deployment Link
-### Deployed Page
+https://malloryklar0516.github.io/weather-dashboard/
+### Deployed Page Appearance 
+![Weather Dashboard after a few searches were made](./Assets/deployed-dashboard.png)
+
 
 ## Technologies Used
 CSS, JavaScript, HTML, Bootstrap, Jquery, Third-Party APIs, DayJS
