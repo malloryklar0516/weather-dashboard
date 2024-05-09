@@ -11,6 +11,7 @@ $(document).ready(function(){
         $('.search-history').append("<li>"+displayList[i]+"</li>" );
     }
     displayList=[];
+    getWeather(historyList[0]);
    //click event listener for the search button feature, calls getWeather function  
     searchBtn.addEventListener('click', function(){
         var searchEl=document.querySelector('#searchcity').value;
