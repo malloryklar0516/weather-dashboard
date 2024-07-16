@@ -8,7 +8,7 @@ $(document).ready(function(){
     //displays 8 recent searches
     var displayList = historyList.slice(0,9);
     for (i=0; i< displayList.length; i++){
-        $('.search-history').append("<li>"+displayList[i]+"</li>" );
+        $('.search-history').append(" <button type='button' class='list-group-item list-group-item-action'>"+displayList[i]+"</button>" );
     }
     displayList=[];
     getWeather(historyList[0]);
