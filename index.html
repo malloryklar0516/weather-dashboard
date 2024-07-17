@@ -10,17 +10,17 @@
     <link rel="stylesheet" type="text/css" href="./Assets/css/style.css" />
   </head>
   <body class="container-fluid text-white p-3">
-    <header class="p-5 text-center text-white bg-primary">
-      <h1>Weather Dashboard</h1>
+    <header class="p-5 text-center text-white bg-primary bg-gradient border border-5 border-success rounded-pill">
+      <h1 class="h1">Weather Dashboard</h1>
     </header>
     <main >
         <div class ='container-fluid d-inline-flex mt-4'>
         <!-- search bar and recent searches list   -->
             <section class="col-md-4"> 
             <div>
-                <label class="text-black" for ="searchcity"> Search for any city: </label><br>
-                <input class ="w-75 input" type ="text" id="searchcity" name="searchcity"> </input><br>
-                <button class ="btn btn-primary" type="save" id="searchbutton">Search</button>
+                <label class="text-black fw-bold mb-2" for ="searchcity"> Search for any city: </label><br>
+                <input class ="w-75 input mb-2" type ="text" id="searchcity" name="searchcity"> </input><br>
+                <button class ="btn btn-primary w-75 text-center" type="save" id="searchbutton">Search</button>
                 <div class="list-group w-75 mt-4" >
                     <ul class="search-history text-black"></ul>
                 </div>
@@ -32,90 +32,89 @@
         </section>
         <!-- current weather card   -->
         <div class="flex-row w-50">
-        <section class="card border border-dark">
-            <div class="card-body text-black">
-                <h3> Current Weather</h3>
+        <section class="card border border-5 border-success">
+            <h3 class="text-success text-center fw-bold"> Current Weather</h3>
+            <div class="card-body  bg-success text-white" >
                 <div class="d-inline-flex">
                     <p class="city"></p>
                     <p class="icon"></p>   
             </div>
-                <p class="temp"></p>
-                <p class="wind"></p>
-                <p class="hum"></p>
+                <p class="temp fs-5"></p>
+                <p class="wind fs-5"></p>
+                <p class="hum fs-5"></p>
             </div>
         </section>
         </div>
     </div>
         <div class="flex-row">
             <div class="title">
-                <h3 id="5dforecast" class="text-black"> 5-Day Forecast:</h3>
+                <h3 id="5dforecast" class="text-black fw-bold h3 text-center"> Five-Day Forecast</h3>
             </div>
         </div>
         <div class="card-container">
             <!-- 5 day forecast cards -->
             <div class="row">
-                <div class="col-md-2">
-                <div class ="card day">
-                    <div class="card-body bg-primary">
-                        <h4 class ="day1-title">Day 1 </h4>
-                        <p class="day1-date"></p>
-                        <p class="day1-icon"></p>
-                        <p class="day1-temp"></p>
-                        <p class="day1-wind"></p>
-                        <p class="day1-humidity"></p>
+                <div class="col-md-4">
+                <div class ="card day shadow mb-5 bg-body-tertiary rounded bg-primary-subtle text-primary fw-bold text-center">
+                    <h4 class ="day1-title h4">Day 1 </h4>
+                    <div class="card-body bg-primary text-white">
+                        <p class="day1-date"><span> <p class="day1-icon"></p></span></p>
+                        <p class="day1-temp fs-5 fw-bold"></p>
+                        <p class="day1-wind fs-6"></p>
+                        <p class="day1-humidity fs-6"></p>
 
                     </div>
                 </div>
             </div>
             
-            <div class="col-md-2">
-                <div class ="card day">
-                    <div class="card-body bg-primary">
-                        <h4 class ="day2-title">Day 2 </h4>
+            <div class="col-md-4">
+                <div class ="card day shadow mb-5 bg-body-tertiary rounded bg-primary-subtle text-primary fw-bold text-center">
+                    <h4 class ="day2-title">Day 2 </h4>
+                    <div class="card-body bg-primary text-white">
                         <p class="day2-date"></p>
                         <p class="day2-icon"></p>
-                        <p class="day2-temp"></p>
-                        <p class="day2-wind"></p>
-                        <p class="day2-humidity"></p>
+                        <p class="day2-temp fs-5 fw-bold"></p>
+                        <p class="day2-wind fs-6"></p>
+                        <p class="day2-humidity fs-6"></p>
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class ="card day">
-                    <div class="card-body bg-primary">
-                        <h4 class ="day3-title">Day 3 </h4>
+            <div class="col-md-4">
+                <div class ="card day shadow mb-5 bg-body-tertiary rounded bg-primary-subtle text-primary fw-bold text-center">
+                    <h4 class ="day3-title">Day 3 </h4>
+                    <div class="card-body bg-primary text-white">
                         <p class="day3-date"></p>
                         <p class="day3-icon"></p>
-                        <p class="day3-temp"></p>
-                        <p class="day3-wind"></p>
-                        <p class="day3-humidity"></p>
+                        <p class="day3-temp fs-5 fw-bold"></p>
+                        <p class="day3-wind fs-6"></p>
+                        <p class="day3-humidity fs-6"></p>
 
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class ="card day">
-                    <div class="card-body bg-primary">
-                        <h4 class ="day4-title">Day 4 </h4>
+            <div class="col-md-4">
+                <div class ="card day shadow mb-5 bg-body-tertiary rounded bg-primary-subtle text-primary fw-bold text-center">
+                    <h4 class ="day4-title ">Day 4 </h4>
+                    <div class="card-body bg-primary text-white">
                         <p class="day4-date"></p>
                         <p class="day4-icon"></p>
-                        <p class="day4-temp"></p>
-                        <p class="day4-wind"></p>
-                        <p class="day4-humidity"></p>
-
+                        <p class="day4-temp fs-5 fw-bold"></p>
+                        <p class="day4-wind fs-6"></p>
+                        <p class="day4-humidity fs-6"></p>
                     </div>
                 </div>
             </div>
-            <div class="col-md-2">
-                <div class ="card day">
-                    <div class="card-body bg-primary">
-                        <h4 class ="day5-title">Day 5 </h4>
+            <div class="col-md-4">
+                <div class ="card day shadow mb-5 bg-body-tertiary rounded bg-primary-subtle text-primary fw-bold text-center">
+                    <h4 class ="day5-title">Day 5 </h4>
+                    <div class="card-body bg-primary text-white">
+                      
                         <p class="day5-date"></p>
                         <p class="day5-icon"></p>
-                        <p class="day5-temp"></p>
-                        <p class="day5-wind"></p>
-                        <p class="day5-humidity"></p>
+                        <p class="day5-temp fs-5 fw-bold"></p>
+                        <p class="day5-wind fs-6"></p>
+                        <p class="day5-humidity fs-6"></p>
 
                     </div>
                 </div>
