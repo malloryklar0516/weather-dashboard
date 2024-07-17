@@ -5,8 +5,8 @@ $(document).ready(function(){
 
    if (localStorage){
     var historyList = JSON.parse(localStorage.getItem('historyList'))||[];
-    //displays 8 recent searches
-    var displayList = historyList.slice(0,9);
+    //displays 5 recent searches
+    var displayList = historyList.slice(0,6);
     for (i=0; i< displayList.length; i++){
         $('.search-history').append(" <button type='button' class='list-group-item list-group-item-action'>"+displayList[i]+"</button>" );
     }
