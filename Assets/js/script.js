@@ -22,7 +22,7 @@ $(document).ready(function(){
         getWeather(city);         
         })
 // gets weather and forecast when cities in recent searches are clicked
-        $('.search-history').on("click","li", function(){
+        $('.search-history').on("click","button", function(){
             getWeather($(this).text());
         })
        };

@@ -27,10 +27,11 @@ WHEN I refresh the page
 THEN the saved events persist
 ```
 ## Deployment
+Runs in browser at the link below. Search for a city to display weather results. 
 ### Deployment Link
 https://malloryklar0516.github.io/weather-dashboard/
 ### Deployed Page Appearance 
-![Weather Dashboard after a few searches were made](./Assets/deployed-dashboard.png)
+![Weather Dashboard after a few searches were made](./Assets/screenshot.png)
 
 
 ## Technologies Used
